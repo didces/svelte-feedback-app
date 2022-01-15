@@ -43,13 +43,13 @@
 
 <Card>
   <header>
-    <h2>How would you rate your service with us?</h2>
+    <h2>Comment jugez-vous le travail de Delas en tant que CEO de Kamtar?</h2>
   </header>
 <form on:submit|preventDefault={handleSubmit}>
   <RatingSelect on:rating-select={handleSelect} />
   <div class="input-group">
-    <input type="text" on:input={handleInput} bind:value = {text} placeholder="Tell us something that keeps you coming back">
-    <Button disabled={btnDisabled} type="submit">Send</Button>
+    <input type="text" on:input={handleInput} bind:value = {text} placeholder="Dîtes nous ce que vous avez remarqué">
+    <Button disabled={btnDisabled} type="submit">Envoyer</Button>
   </div>
   {#if message}
     <div class="message">
